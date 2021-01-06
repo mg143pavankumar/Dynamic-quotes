@@ -183,49 +183,8 @@
 }
 @media screen and (max-width: 600px) {
 	.container .inner {
-		width: 80%;
-		padding: 40px;
-	}
-
-	.inner_container #quotes {
-		font-size: 1.2rem;
-		font-weight: 500;
-		font-family: 'Open Sans', sans-serif;
-		font-style: italic;
-		padding: 10px 5px 10px 5px;
-		color: var(--textColor);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-
-	#newQuotes {
-		background-color: var(--btnColor);
-		color: #fff;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 18px;
-		font-size: 1.5rem;
-		font-weight: bold;
-		font-family: 'Roboto', sans-serif;
-	}
-	.inner_container #author {
-		font-size: 17px;
-		font-weight: 600;
-		font-family: 'Pacifico', cursive;
-		color: var(--textColor);
-		padding: 10px 10px 10px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
-@media screen and (max-width: 600px) {
-	.container .inner {
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		padding: 30px;
 		background-color: var(--bgColor);
 		box-shadow: none;
