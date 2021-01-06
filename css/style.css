@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bgColor: rgb(3, 72, 99);
+	--primaryColor: #1487a7;
+	--secondaryColor: #fff;
+	--btnColor: #0084ff;
+	--iconColor: #0084ff;
+	--startQuoteColor: rgb(189, 189, 189);
+	--textColor: rgb(134, 133, 133);
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--bgColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .inner {
+	width: 60%;
+	height: 80%;
+	background-color: var(--primaryColor);
+	box-shadow: 20px 20px 30px rgba(5, 40, 51, 0.877), inset 3px 3px 10px rgba(5, 56, 71, 0.7);
+	padding: 50px;
+	border-radius: 50px;
+}
+
+.inner .inner_container {
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondaryColor);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), inset 2px 2px 20px rgba(0, 0, 0, 0.2);
+	padding: 50px;
+	position: relative;
+}
+
+.inner_container .topRightIcon {
+	background-color: rgb(79, 176, 214);
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 0px 0px 0px 50px;
+	cursor: pointer;
+}
+
+.inner_container .topRightIcon:hover {
+	background-color: var(--iconColor);
+}
+
+.topRightIcon #tweetme {
+	color: var(--secondaryColor);
+	font-size: 40px;
+}
+
+.inner_container .text {
+	width: 100%;
+}
+
+.inner_container .start-quote {
+	font-size: 50px;
+	color: var(--startQuoteColor);
+}
+
+.inner_container #quotes {
+	font-size: 2.5rem;
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	padding: 10px 50px 10px 50px;
+	color: var(--textColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inner_container #author {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Pacifico', cursive;
+	color: var(--textColor);
+	padding: 10px 50px 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.inner_container .button {
+	background-color: var(--btnColor);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#newQuotes {
+	background-color: var(--btnColor);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 18px;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+
+#newQuotes:hover {
+	background-color: #0769fdec;
+	cursor: pointer;
+}
